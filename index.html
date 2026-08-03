@@ -806,7 +806,7 @@ async function handleFund(){
   const { data: wallet } = await sb.from('wallets').select('balance').eq('user_id', user.id).maybeSingle();
   const newBalance = Number((Number(wallet.balance) + amount).toFixed(2));
   await sb.from('wallets').update({ balance: newBalance, updated_at: new Date().toISOString() }).eq('user_id', user.id);
-  const tx = await recordTx({ name: 'Wallet funding — Simulated', amount: amount, status: 'success', icon: '🏦' });
+  const tx = await recordTx({ name: 'Wallet Funded', amount: amount, status: 'success', icon: '🏦' });
 
   currentWallet.balance = newBalance;
   document.getElementById('fundAmount').value = '';
