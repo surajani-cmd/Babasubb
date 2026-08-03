@@ -3,7 +3,7 @@
   "short_name": "Babasubb",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#0E1330",
+  "background_color": "#FFFFFF",
   "theme_color": "#0E1330",
   "orientation": "portrait",
   "icons": [
