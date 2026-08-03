@@ -1,5 +1,5 @@
 const CACHE_NAME = "payflex-cache-v2";
-const FILES_TO_CACHE = ["./", "./index.html", "./manifest.json", "./icon-192.png", "./icon-512.png"];
+const FILES_TO_CACHE = ["./", "./index.html", "./manifest.json", "./S192.png", "./S512.png"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
